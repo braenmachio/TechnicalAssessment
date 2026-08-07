@@ -1,5 +1,26 @@
 ## Technical Assessment Documentation
 
 ### 1. File Naming
-- Python files are also treated as *modules* hence, lowercase separated by under_scores
+_ Python files are also treated as *modules* hence, lowercase separated by under_scores
 `palindrome_checker.py` and `polymer_plant.py`
+
+### 2. Minimal Dockerfile
+_ Be as small as reasonably possible. How do I accomplish this: 
+
+**Multi stage the builds**
+    _ Move dependecies from being compiled inside the runtime
+    _ Build artifacts (.whl) are used for dependency installation at runtime   
+
+**Runtime Codefiles**
+    _ Copy only the required files by the application
+**Test**
+    _ `docker-compose.yaml` for a quick dry run :w
+**Notes**
+    _ Only the last image suffices into production
+    _ psycopg[c] being C optimized, during installation, C extensions shall be compiled.
+    _ Add `build-essentials`
+    _ What reruns? Any code layer that changes. `System Packages OR Dependencies OR InstructionFiles`
+
+  **Improvements**
+  i. Pinning dependency version
+  ii. `.dockerignore` for host local env/secrets, dependecy directories, tests, IDE junk
