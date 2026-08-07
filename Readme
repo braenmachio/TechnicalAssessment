@@ -23,6 +23,20 @@ _ Be as small as reasonably possible. How do I accomplish this:
     Connecting with: host=db port=5432 dbname=postgres user=postgres password=postgres
     Connected successfully. Server says: PostgreSQL 16.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
 ~~~
+
+**Conclusion**
+    _ The multi-stage approach adds an **80MB** overhead on the base 26.04 in production vs. to a single stage build with an overhead of **727 MB**
+~~~
+    technicalassessment-app:latest   483ef74ca405        238MB         60.5MB    U   
+    ubuntu:resolute                  678c6550cc43        158MB         45.3MB 
+~~~
+    
+~~~
+    comparison-singlestage:latest    7e7808b4106e        885MB          226MB
+    postgres:16-alpine               57c72fd2a128        420MB          117MB    U
+    technicalassessment-app:latest   483ef74ca405        238MB         60.5MB    U
+    ubuntu:resolute                  678c6550cc43        158MB         45.3MB
+~~~
 **Notes**
     _ Only the last image suffices into production
     _ psycopg[c] being C optimized, during installation, C extensions shall be compiled.
