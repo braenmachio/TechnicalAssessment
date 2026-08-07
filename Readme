@@ -1,0 +1,5 @@
+## Technical Assessment Documentation
+
+### 1. File Naming
+- Python files are also treated as *modules* hence, lowercase separated by under_scores
+`palindrome_checker.py` and `polymer_plant.py`
