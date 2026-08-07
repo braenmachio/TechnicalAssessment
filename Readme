@@ -15,12 +15,21 @@ _ Be as small as reasonably possible. How do I accomplish this:
     _ Copy only the required files by the application
 **Test**
     _ `docker-compose.yaml` for a quick dry run :w
+~~~
+    psycopg version: 3.3.4
+    Connecting with: host=db port=5432 dbname=postgres user=postgres password=postgres
+    Connected successfully. Server says: PostgreSQL 16.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+    psycopg version: 3.3.4
+    Connecting with: host=db port=5432 dbname=postgres user=postgres password=postgres
+    Connected successfully. Server says: PostgreSQL 16.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+~~~
 **Notes**
     _ Only the last image suffices into production
     _ psycopg[c] being C optimized, during installation, C extensions shall be compiled.
-    _ Add `build-essentials`
+    _ Add `build-essentials` & `python3-dev`
     _ What reruns? Any code layer that changes. `System Packages OR Dependencies OR InstructionFiles`
 
   **Improvements**
   i. Pinning dependency version
   ii. `.dockerignore` for host local env/secrets, dependecy directories, tests, IDE junk
+iii. 

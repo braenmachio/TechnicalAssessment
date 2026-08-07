@@ -1,1 +1,1 @@
-psycopg-c
+psycopg[c]

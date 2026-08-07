@@ -1,0 +1,391 @@
+[+] up 14/14
+ ✔ Image postgres:16-alpine Pulled                                                                                     106.6s
+[+] Building 116.7s (6/17)                                                                                                  [+] Building 116.8s (6/17)                                                                                                  [+] Building 117.0s (6/17)                                                                                                  
+ => [internal] load local bake definitions                                                                             0.0ss
+ => => reading from stdin 546B                                                                                         0.0ss
+ => [internal] load build definition from Dockerfile                                                                   0.2ss
+ => => transferring dockerfile: 835B                                                                                   0.1ss
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                         3.3ss
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                        2.7ss
+ => [internal] load .dockerignore                                                                                      0.1ss
+ => => transferring context: 2B                                                                                        0.0ss
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af3513  113.1ss
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af  0.2ss
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 15.73MB / 22.53MB                     111.8[+] Building 117.1s (6/17)                                                                                                  > => sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                             1.7
+ => [internal] load local bake definitions                                                                             0.0s=> => sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 25.17MB / 27.57MB                     111.7
+ => => reading from stdin 546B                                                                                         0.0s=> => sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                        31.8
+ => [internal] load build definition from Dockerfile                                                                   0.2s=> => sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 10.49MB / 236.32MB                    110.1
+ => => transferring dockerfile: 835B                                                                                   0.1s=> => sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 10.49MB / 67.80MB                      79.9
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                         3.3s=> [builder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b191  113.1
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                        2.7s=> => resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a03  0.2
+ => [internal] load .dockerignore                                                                                      0.1s=> => sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 29.36MB / 41.57MB                     112.4
+ => => transferring context: 2B                                                                                        0.0s=> => sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                             0.8
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af3513  113.2s=> [internal] load build context                                                                                      0.3
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af  0.2s=> => transferring context: 1.44kB                                                                                    0.0
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 15.73MB / 22.53MB                     111.9[+] Building 117.2s (6/17)                                                                                                  > => sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                             1.7
+ => [internal] load local bake definitions                                                                             0.0s=> => sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 25.17MB / 27.57MB                     111.9
+ => => reading from stdin 546B                                                                                         0.0s=> => sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                        31.8
+ => [internal] load build definition from Dockerfile                                                                   0.2s=> => sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 10.49MB / 236.32MB                    110.2
+ => => transferring dockerfile: 835B                                                                                   0.1s=> => sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 10.49MB / 67.80MB                      80.0
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                         3.3s=> [builder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b191  113.2
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                        2.7s=> => resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a03  0.2
+ => [internal] load .dockerignore                                                                                      0.1s=> => sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 29.36MB / 41.57MB                     112.5
+ => => transferring context: 2B                                                                                        0.0s=> => sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                             0.8
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af3513  113.3s=> [internal] load build context                                                                                      0.3
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af  0.2s=> => transferring context: 1.44kB                                                                                    0.0
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 15.73MB / 22.53MB                    [+] Building 117.4s (6/17)                                                                                                 sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                          
+ => [internal] load local bake definitions                                                                           0.0s> sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 25.17MB / 27.57MB                    
+ => => reading from stdin 546B                                                                                       0.0s> sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                      
+ => [internal] load build definition from Dockerfile                                                                 0.2s> sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 10.49MB / 236.32MB                   
+ => => transferring dockerfile: 835B                                                                                 0.1s> sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 10.49MB / 67.80MB                    
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                       3.3sbuilder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b191 
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                      2.7s> resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a0
+ => [internal] load .dockerignore                                                                                    0.1s> sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 29.36MB / 41.57MB                    
+ => => transferring context: 2B                                                                                      0.0s> sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                          
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af35  113.5sinternal] load build context                                                                                   
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726  0.2s> transferring context: 1.44kB                                                                                 
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 15.73MB / 22.53MB                   1[+] Building 117.4s (6/17)                                                                                                 sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                          
+ => [internal] load local bake definitions                                                                           0.0s> sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 25.17MB / 27.57MB                   1
+ => => reading from stdin 546B                                                                                       0.0s> sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                      
+ => [internal] load build definition from Dockerfile                                                                 0.2s> sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 11.16MB / 236.32MB                  1
+ => => transferring dockerfile: 835B                                                                                 0.1s> sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 11.53MB / 67.80MB                    
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                       3.3sbuilder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1  1
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                      2.7s> resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a 
+ => [internal] load .dockerignore                                                                                    0.1s> sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 29.36MB / 41.57MB                   1
+ => => transferring context: 2B                                                                                      0.0s> sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                          
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af35  113.5sinternal] load build context                                                                                   
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726  0.2s> transferring context: 1.44kB                                                                                 
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 15.73MB / 22.53MB                   1[+] Building 117.5s (6/17)                                                                                                 sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                          
+ => [internal] load local bake definitions                                                                           0.0s> sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 25.17MB / 27.57MB                   1
+ => => reading from stdin 546B                                                                                       0.0s> sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                      
+ => [internal] load build definition from Dockerfile                                                                 0.2s> sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 11.16MB / 236.32MB                  1
+ => => transferring dockerfile: 835B                                                                                 0.1s> sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 11.53MB / 67.80MB                    
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                       3.3sbuilder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1  1
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                      2.7s> resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a 
+ => [internal] load .dockerignore                                                                                    0.1s> sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 29.36MB / 41.57MB                   1
+ => => transferring context: 2B                                                                                      0.0s> sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                          
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af35  113.6sinternal] load build context                                                                                   
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726  0.2s> transferring context: 1.44kB                                                                                 
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 15.73MB / 22.53MB                   1[+] Building 117.6s (6/17)                                                                                                 sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                          
+ => [internal] load local bake definitions                                                                           0.0s> sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 25.17MB / 27.57MB                   1
+ => => reading from stdin 546B                                                                                       0.0s> sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                      
+ => [internal] load build definition from Dockerfile                                                                 0.2s> sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 11.53MB / 236.32MB                  1
+ => => transferring dockerfile: 835B                                                                                 0.1s> sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 11.53MB / 67.80MB                    
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                       3.3sbuilder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1  1
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                      2.7s> resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a 
+ => [internal] load .dockerignore                                                                                    0.1s> sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 29.36MB / 41.57MB                   1
+ => => transferring context: 2B                                                                                      0.0s> sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                          
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af35  113.7sinternal] load build context                                                                                   
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726  0.2s> transferring context: 1.44kB                                                                                 
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 15.73MB / 22.53MB                   1[+] Building 117.7s (6/17)                                                                                                 sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                          
+ => [internal] load local bake definitions                                                                           0.0s> sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 25.17MB / 27.57MB                   1
+ => => reading from stdin 546B                                                                                       0.0s> sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                      
+ => [internal] load build definition from Dockerfile                                                                 0.2s> sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 11.53MB / 236.32MB                  1
+ => => transferring dockerfile: 835B                                                                                 0.1s> sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 11.53MB / 67.80MB                    
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                       3.3sbuilder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1  1
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                      2.7s> resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a 
+ => [internal] load .dockerignore                                                                                    0.1s> sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 29.36MB / 41.57MB                   1
+ => => transferring context: 2B                                                                                      0.0s> sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                          
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af35  113.8sinternal] load build context                                                                                   
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726  0.2s> transferring context: 1.44kB                                                                                 
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 16.78MB / 22.53MB                   1[+] Building 117.8s (6/17)                                                                                                 sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                          
+ => [internal] load local bake definitions                                                                           0.0s> sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 25.17MB / 27.57MB                   1
+ => => reading from stdin 546B                                                                                       0.0s> sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                      
+ => [internal] load build definition from Dockerfile                                                                 0.2s> sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 11.53MB / 236.32MB                  1
+ => => transferring dockerfile: 835B                                                                                 0.1s> sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 11.53MB / 67.80MB                    
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                       3.3sbuilder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1  1
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                      2.7s> resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a 
+ => [internal] load .dockerignore                                                                                    0.1s> sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 29.36MB / 41.57MB                   1
+ => => transferring context: 2B                                                                                      0.0s> sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                          
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af35  113.9sinternal] load build context                                                                                   
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726  0.2s> transferring context: 1.44kB                                                                                 
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 16.78MB / 22.53MB             [+] Building 118.0s (6/17)                                                                                          sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                   
+ => [internal] load local bake definitions                                                                     0.0s sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 25.17MB / 27.57MB             
+ => => reading from stdin 546B                                                                                 0.0s sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB               
+ => [internal] load build definition from Dockerfile                                                           0.2s sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 11.53MB / 236.32MB            
+ => => transferring dockerfile: 835B                                                                           0.1s sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 11.53MB / 67.80MB             
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                 3.3suilder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca6770
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                2.7s resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d
+ => [internal] load .dockerignore                                                                              0.1s sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 29.36MB / 41.57MB             
+ => => transferring context: 2B                                                                                0.0s sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                   
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b13517  114.1snternal] load build context                                                                            
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1  0.2s transferring context: 1.44kB                                                                          
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 16.78MB / 22.53MB             [+] Building 118.1s (6/17)                                                                                          sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                   
+ => [internal] load local bake definitions                                                                     0.0s sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 25.17MB / 27.57MB             
+ => => reading from stdin 546B                                                                                 0.0s sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB               
+ => [internal] load build definition from Dockerfile                                                           0.2s sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 11.53MB / 236.32MB            
+ => => transferring dockerfile: 835B                                                                           0.1s sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 11.53MB / 67.80MB             
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                 3.3suilder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca67  
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                2.7s resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d
+ => [internal] load .dockerignore                                                                              0.1s sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 29.36MB / 41.57MB             
+ => => transferring context: 2B                                                                                0.0s sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                   
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b13517  114.2snternal] load build context                                                                            
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1  0.2s transferring context: 1.44kB                                                                          
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 16.78MB / 22.53MB             [+] Building 118.2s (6/17)                                                                                          sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                   
+ => [internal] load local bake definitions                                                                     0.0s sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 25.17MB / 27.57MB             
+ => => reading from stdin 546B                                                                                 0.0s sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB               
+ => [internal] load build definition from Dockerfile                                                           0.2s sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 11.53MB / 236.32MB            
+ => => transferring dockerfile: 835B                                                                           0.1s sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 11.53MB / 67.80MB             
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                 3.3suilder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca67  
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                2.7s resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d
+ => [internal] load .dockerignore                                                                              0.1s sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 29.36MB / 41.57MB             
+ => => transferring context: 2B                                                                                0.0s sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                   
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b13517  114.3snternal] load build context                                                                            
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1  0.2s transferring context: 1.44kB                                                                          
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 16.78MB / 22.53MB             [[+] Building 119.7s (6/17)                                                                                  [+] Building 119.8s (6/17)                                                                                   [+] Building 120.8s (6/17)                                                                                   
+ => [internal] load local bake definitions                                                              0.0ss
+ => => reading from stdin 546B                                                                          0.0ss
+ => [internal] load build definition from Dockerfile                                                    0.2ss
+ => => transferring dockerfile: 835B                                                                    0.1ss
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                          3.3ss
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                         2.7ss
+ => [internal] load .dockerignore                                                                       0.1ss
+ => => transferring context: 2B                                                                         0.0ss
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee07  116.9ss
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64  0.2ss
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 16.78MB / 22.53MB      115.6s[+] Building 122[[+[+] Building 123.7s (6/17)                                                                                                   [+] Building 123.8s (6/17)                                                                                                    [+] Building 124.0s (6/17)                                                                                                    
+ => [internal] load local bake definitions                                                                               0.0ss
+ => => reading from stdin 546B                                                                                           0.0ss
+ => [internal] load build definition from Dockerfile                                                                     0.2ss
+ => => transferring dockerfile: 835B                                                                                     0.1ss
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                           3.3ss
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                          2.7ss
+ => [internal] load .dockerignore                                                                                        0.1ss
+ => => transferring context: 2B                                                                                          0.0ss
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af351354  120.1ss
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af35  0.2ss
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 17.83MB / 22.53MB                       118.7[+] Building 124.1s (6/17)                                                                                                    > => sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                               1.7
+ => [internal] load local bake definitions                                                                               0.0s=> => sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 27.26MB / 27.57MB                       118.7
+ => => reading from stdin 546B                                                                                           0.0s=> => sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                          31.8
+ => [internal] load build definition from Dockerfile                                                                     0.2s=> => sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 13.63MB / 236.32MB                      117.0
+ => => transferring dockerfile: 835B                                                                                     0.1s=> => sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 12.58MB / 67.80MB                        86.9
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                           3.3s=> [builder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d  120.0
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                          2.7s=> => resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a03    0.2
+ => [internal] load .dockerignore                                                                                        0.1s=> => sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 31.46MB / 41.57MB                       119.4
+ => => transferring context: 2B                                                                                          0.0s=> => sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                               0.8
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af351354  120.2s=> [internal] load build context                                                                                        0.3
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af35  0.2s=> => transferring context: 1.44kB                                                                                      0.0
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 17.83MB / 22.53MB                       118.9[+] Building 124.4s (6/17)                                                                                                  
+ => [internal] load local bake definitions                                                                             0.0s7
+ => => reading from stdin 546B                                                                                         0.0s
+ => [internal] load build definition from Dockerfile                                                                   0.2s7
+ => => transferring dockerfile: 835B                                                                                   0.1s
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                         3.3s8
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                        2.7s
+ => [internal] load .dockerignore                                                                                      0.1s2
+ => => transferring context: 2B                                                                                        0.0s
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af3513  120.3s0
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af  0.2s
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 17.83MB / 22.53MB                     119.0s2
+ => [internal] load local bake definitions                                                                             0.0s => sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 27.57MB / 27.57MB                     118
+ => => reading from stdin 546B                                                                                         0.0s => sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                        31
+ => [internal] load build definition from Dockerfile                                                                   0.2s => sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 13.63MB / 236.32MB                    117
+ => => transferring dockerfile: 835B                                                                                   0.1s => sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 12.58MB / 67.80MB                      87
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                         3.3s => sha256:68b64c51cda3d04397bcf5742a29a9a1ba7adcfd18a376bacb8d114ed64cbd5a 0B / 25.64MB                            0
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                        2.7s [builder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b191  120
+ => [internal] load .dockerignore                                                                                      0.1s => resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a03  0
+ => => transferring context: 2B                                                                                        0.0s => sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 31.46MB / 41.57MB                     119
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af3513  120.5s => sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                             0
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af  0.2s [internal] load build context                                                                                      0
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 17.83MB / 22.53MB                     119.1s => transferring context: 1.44kB                                                                                    0
+[+] Building 124.5s (6/17)                                                                                                  
+ => [internal] load local bake definitions                                                                             0.0s
+ => => reading from stdin 546B                                                                                         0.0s
+ => [internal] load build definition from Dockerfile                                                                   0.2s
+ => => transferring dockerfile: 835B                                                                                   0.1s
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                         3.3s
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                        2.7s
+ => [internal] load .dockerignore                                                                                      0.1s
+ => => transferring context: 2B                                                                                        0.0s
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af3513  120.6s
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af  0.2s
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 17.83MB / 22.53MB                     119.2s
+[+] Building 124.7s (6/17)                                                                                              
+ => [internal] load local bake definitions                                                                         0.0s
+ => => reading from stdin 546B                                                                                     0.0s8
+ => [internal] load build definition from Dockerfile                                                               0.2s
+ => => transferring dockerfile: 835B                                                                               0.1s1
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                     3.3s
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                    2.7s7
+ => [internal] load .dockerignore                                                                                  0.1s
+ => => transferring context: 2B                                                                                    0.0s7
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af  120.8s
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b13517  0.2s0
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 17.83MB / 22.53MB                 119.5s
+ => => sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                         1.7s0
+ => => sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 27.57MB / 27.57MB                 118.7s
+ => => sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                    31.8s0
+ => => sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 13.63MB / 236.32MB                117.6s
+ => => sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 12.58MB / 67.80MB                  87.5s9
+ => => sha256:68b64c51cda3d04397bcf5742a29a9a1ba7adcfd18a376bacb8d114ed64cbd5a 0B / 25.64MB                        0.5s
+[+] Building 124.8s (6/17)                                                                                              
+ => [internal] load local bake definitions                                                                         0.0s
+ => => reading from stdin 546B                                                                                     0.0s0
+ => [internal] load build definition from Dockerfile                                                               0.2s
+ => => transferring dockerfile: 835B                                                                               0.1s0
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                     3.3s
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                    2.7s
+ => [internal] load .dockerignore                                                                                  0.1s
+ => => transferring context: 2B                                                                                    0.0s
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af  120.9s
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b13517  0.2s
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 17.83MB / 22.53MB                 119.6s
+[+] Building 125.0s (6/17)                                                                                            
+ => [internal] load local bake definitions                                                                       0.0s
+ => => reading from stdin 546B                                                                                   0.0s7
+ => [internal] load build definition from Dockerfile                                                             0.2s
+ => => transferring dockerfile: 835B                                                                             0.1s8
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                   3.3s
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                  2.7s9
+ => [internal] load .dockerignore                                                                                0.1s
+[+] Building 249.6s (7/17)                                                                                           
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b135172  245.7s
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b13  0.2ss
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 22.53MB / 22.53MB              162.9ss
+ => => sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                      1.7s
+ => => sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 27.57MB / 27.57MB              118.7ss
+ => => sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                 31.8ss
+ => => sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 40.89MB / 236.32MB             242.7s
+ => => sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 44.04MB / 67.80MB              212.5ss
+ => => sha256:68b64c51cda3d04397bcf5742a29a9a1ba7adcfd18a376bacb8d114ed64cbd5a 20.97MB / 25.64MB              125.6ss
+ => => sha256:1da3cb2f93f2ca3c5bdaf4c024a7f1ebd717938d20c858e4be4b9aa81fc8608c 23.07MB / 49.31MB               81.5s
+ => [builder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677  165.9ss
+ => => resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4  0.2ss
+[+] Building 249.8s (7/17)                                                                                           
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b135172  245.9ss
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b13  0.2ss
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 22.53MB / 22.53MB              162.9s
+ => => sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                      1.7ss
+ => => sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 27.57MB / 27.57MB              118.7ss
+ => => sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                 31.8s
+ => => sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 40.89MB / 236.32MB             242.8ss
+ => => sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 44.04MB / 67.80MB              212.7ss
+ => => sha256:68b64c51cda3d04397bcf5742a29a9a1ba7adcfd18a376bacb8d114ed64cbd5a 20.97MB / 25.64MB              125.7s
+ => => sha256:1da3cb2f93f2ca3c5bdaf4c024a7f1ebd717938d20c858e4be4b9aa81fc8608c 24.12MB / 49.31MB               81.6ss
+ => [builder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677  165.9s
+ => => resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4  0.2s
+[+] Building 249.9s (7/17)                                                   
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575a  246.0s
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08  0.2sd
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a0 22.53MB / 22.53MB  162.9s
+ => => sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a1 248B / 248B  1.7sd
+ => => sha256:dfdcf562588ea62f3096b1dc93d0f0002415 27.57MB / 27.57MB  118.7s
+ => => sha256:dd4663c0efc39e4301854b842a573355e5a2e8a 6.10MB / 6.10MB  31.8s0
+ => => sha256:d74736caedd40737be802d27bfe1d5d0e10 40.89MB / 236.32MB  243.0s
+ => => sha256:ec935196e6a095bdd6ac865248321ea4fd33 44.04MB / 67.80MB  212.8s 
+ => => sha256:68b64c51cda3d04397bcf5742a29a9a1ba7a 20.97MB / 25.64MB  125.8s
+ => => sha256:1da3cb2f93f2ca3c5bdaf4c024a7f1ebd7179 24.12MB / 49.31MB  81.8s 
+ => [builder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c655  165.9s
+ => => resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e0  0.2sm
+[+] Building 638.7s (10/17)                                                                                                                
+ => [internal] load local bake definitions                                                                                            0.0s
+ => => reading from stdin 546B                                                                                                        0.0s
+ => [internal] load build definition from Dockerfile                                                                                  0.2s
+ => => transferring dockerfile: 835B                                                                                                  0.1s
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie                                                        3.3s
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                                                       2.7s
+ => [internal] load .dockerignore                                                                                                     0.1s
+ => => transferring context: 2B                                                                                                       0.0s
+ => FROM ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af3513548de6d9f68      632.6s
+ => => resolve ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie@sha256:08575ad8bdd25952c7ab1ea28a1babcb64ee076b1351726af3513548de6d9f68  0.2s
+ => => sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085 22.53MB / 22.53MB                                    162.9s
+ => => sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c 248B / 248B                                            1.7s
+ => => sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f 27.57MB / 27.57MB                                    118.7s
+ => => sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56 6.10MB / 6.10MB                                       31.8s
+ => => sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0 236.32MB / 236.32MB                                  591.9s
+ => => sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212 67.80MB / 67.80MB                                    351.5s
+ => => sha256:68b64c51cda3d04397bcf5742a29a9a1ba7adcfd18a376bacb8d114ed64cbd5a 25.64MB / 25.64MB                                    168.6s
+ => => sha256:1da3cb2f93f2ca3c5bdaf4c024a7f1ebd717938d20c858e4be4b9aa81fc8608c 49.31MB / 49.31MB                                    167.5s
+ => => extracting sha256:1da3cb2f93f2ca3c5bdaf4c024a7f1ebd717938d20c858e4be4b9aa81fc8608c                                             7.2s
+ => => extracting sha256:68b64c51cda3d04397bcf5742a29a9a1ba7adcfd18a376bacb8d114ed64cbd5a                                             3.3s
+ => => extracting sha256:ec935196e6a095bdd6ac865248321ea4fd33424071fe14264cd33900f8ae6212                                            11.0s
+ => => extracting sha256:d74736caedd40737be802d27bfe1d5d0e10377ddb1c7b4103391e0bbff5152e0                                            30.7s
+ => => extracting sha256:dd4663c0efc39e4301854b842a573355e5a2e8a1c03af208943aa6fbc5550b56                                             0.8s
+ => => extracting sha256:dfdcf562588ea62f3096b1dc93d0f0002415550ecb648bb58adb57638a9f4b3f                                             3.5s
+ => => extracting sha256:64f80e889e0dfb8281f8b3aadf68518c050ab88af0a15f43523c71cff6f9c42c                                             0.1s
+ => => extracting sha256:9a0574583e7f203ebf699fe4902940ffb1a07c8cfeb3853f8f05ea736b3cb085                                             2.5s
+ => [builder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a03       165.9s
+ => => resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914d4afc7a03                 0.2s
+ => => sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60 41.57MB / 41.57MB                                    158.2s
+ => => sha256:a7fb98a8eddd1a70f99f205cb4b66e830a3e8ef4798f5636ece054a567b650de 389B / 389B                                            0.8s
+ => => extracting sha256:617772c7d19b9f9c4141bc73b37e6f4c5e4e69729f6881a73d0dc23676dbbd60                                             7.0s
+=> [internal] load build context                                                                                                     0.3s
+ => => transferring context: 1.44kB                                                                                                   0.0s
+ => [stage-1 2/5] RUN apt-get update ; apt-get install -y --no-install-recommends     python3 libpq5 ; rm -rf /var/lib/apt/lists/*  307.4s
+ => ERROR [builder 2/6] COPY --from=ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie /uv /uvx /usr/local/bin/                            0.0s
+------
+[+] up 14/152/6] COPY --from=ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie /uv /uvx /usr/local/bin/:
+ ✔ Image postgres:16-alpine      Pulled                                                                                              106.6s
+ ⠙ Image technicalassessment-app Building                                                                                            638.8s
+Dockerfile:5
+
+--------------------
+
+   3 |     
+
+   4 |     # we use uv for our tooling
+
+   5 | >>> COPY --from=ghcr.io/astral-sh/uv:0.12.2-python3.13-trixie /uv /uvx /usr/local/bin/
+
+   6 |     
+
+   7 |     RUN apt-get update ; apt-get install -y --no-install-recommends \
+
+--------------------
+
+failed to solve: failed to compute cache key: failed to calculate checksum of ref x28o2pnris99cw51d628rkpb1::p7lspn1brcc21qozgypc9vj3e: "/uv": not found
+
+----------------- RUN 2:
+
+Building 187.4s (19/19) FINISHED                                                                               
+ => [internal] load local bake definitions                                                                    0.0s
+ => => reading from stdin 546B                                                                                0.0s
+ => [internal] load build definition from Dockerfile                                                          0.1s
+ => => transferring dockerfile: 818B                                                                          0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:26.04                                               1.3s
+ => [internal] load metadata for ghcr.io/astral-sh/uv:0.12.2                                                  1.2s
+ => [internal] load .dockerignore                                                                             0.0s
+ => => transferring context: 2B                                                                               0.0s
+ => FROM ghcr.io/astral-sh/uv:0.12.2@sha256:069a51314a7bb6031777a9273205fe1b0b19e914ef418207d1338b268df641dd  0.2s
+ => => resolve ghcr.io/astral-sh/uv:0.12.2@sha256:069a51314a7bb6031777a9273205fe1b0b19e914ef418207d1338b268d  0.2s
+ => [builder 1/6] FROM docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677  0.2s
+ => => resolve docker.io/library/ubuntu:26.04@sha256:678c6550cc43645e08669028bc177f50be4e7c5b8cca677067b1914  0.2s
+ => [internal] load build context                                                                             0.1s
+ => => transferring context: 144B                                                                             0.0s
+ => CACHED [stage-1 2/5] RUN apt-get update ; apt-get install -y --no-install-recommends     libpq5 ; rm -rf  0.0s
+ => CACHED [builder 2/6] COPY --from=ghcr.io/astral-sh/uv:0.12.2 /uv /uvx /usr/local/bin/                     0.0s
+ => CACHED [builder 3/6] RUN apt-get update ; apt-get install -y --no-install-recommends     build-essential  0.0s
+ => CACHED [builder 4/6] WORKDIR /build                                                                       0.0s
+ => CACHED [builder 5/6] COPY my_app/requirements.txt .                                                       0.0s
+ => [builder 6/6] RUN uv venv /opt/venv --python 3.13 ; uv pip install --python /opt/venv/bin/python --no-  179.6s
+ => [stage-1 3/5] COPY --from=builder /opt/venv /opt/venv                                                     0.4s 
+ => [stage-1 4/5] WORKDIR /app                                                                                0.2s 
+ => [stage-1 5/5] COPY my_app/my_app ./my_app                                                                 0.2s 
+ => exporting to image                                                                                        4.2s 
+ => => exporting layers                                                                                       2.8s 
+ => => exporting manifest sha256:b580fcf17a377fd18d8a0c7d33bdc2b29d9c2afa63fff5689386951aac217105             0.1s 
+ => => exporting config sha256:4fadfabd4cf5be67d791adc80c45e49c728bbd360ed899196829b53839ae392f               0.0s
+ => => exporting attestation manifest sha256:c851df51f45e8dc2bbb5377df82e4caca2a7a5f6985eb6c4e22bffd431059cf  0.1s
+ => => exporting manifest list sha256:3f607fd0732a4b4d55d60309fa9adf01c572f21b828c969e70852dd8a6e0ce27        0.1s
+ => => naming to docker.io/library/technicalassessment-app:latest                                             0.0s
+ => => unpacking to docker.io/library/technicalassessment-app:latest                                          1.0s
+ => resolving provenance for metadata file                                                                    0.0s
+[+] up 3/4
+ ✔ Image technicalassessment-app       Built                                                                 187.6s
+ ✔ Network technicalassessment_default Created                                                                 0.2s
+ ✔ Container technicalassessment-db-1  Healthy                                                                13.4s
+ ⠹ Container technicalassessment-app-1 Starting                                                               13.5s
+Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "python3": executable file not found in $PATH
+
+ *  The terminal process "/usr/bin/bash '-c', 'docker compose -f 'docker-compose.yaml' up -d --build'" terminated with exit code: 1. 
+ *  Terminal will be reused by tasks, press any key to close it. 
+
+
+ --------------- RUN 3:
+
+ psycopg version: 3.3.4
+Connecting with: host=db port=5432 dbname=postgres user=postgres password=postgres
+Connected successfully. Server says: PostgreSQL 16.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+psycopg version: 3.3.4
+Connecting with: host=db port=5432 dbname=postgres user=postgres password=postgres
+Connected successfully. Server says: PostgreSQL 16.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
