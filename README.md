@@ -1,11 +1,11 @@
 ## Technical Assessment Documentation
 
 ### 1. File Naming
-_ Python files are also treated as *modules* hence, lowercase separated by under_scores
+- Python files are also treated as *modules* hence, lowercase separated by under_scores
 `palindrome_checker.py` and `polymer_plant.py`
 
 ### 2. Minimal Dockerfile
-_ Be as small as reasonably possible. How do I accomplish this: 
+- Be as small as reasonably possible. How do I accomplish this: 
 
 **Multi stage the builds**
 
@@ -25,7 +25,7 @@ _ Be as small as reasonably possible. How do I accomplish this:
 
 **Conclusion**
 
-- The multi-stage approach adds an **80MB** overhead on the base 26.04 in production vs. to a single stage build with an overhead of **727 MB**
+- The multi-stage approach adds an **80MB** overhead on the base 26.04 in production compared to a single stage build with an overhead of **727 MB**
     
 ~~~
     comparison-singlestage:latest    7e7808b4106e        885MB          226MB
@@ -44,3 +44,28 @@ _ Be as small as reasonably possible. How do I accomplish this:
   
 - Pinning dependency version
 - `.dockerignore` for host local env/secrets, dependecy directories, tests, IDE junk
+
+### 2. Palindrome Checker
+- Given that the there are no spaces or punctuation to strip, this meets the criteria for a slicing operation s == s[::-1]
+- It's performant, however, the fact that it creates a copy of the sequence, it is less prefered in environments where memory is a constraining factor.
+
+- In the code, I implement a `Two-Pointer pattern` for this operation thiswise:
+1. A string passes for a sequence hence can be indexed and iterated over.
+2. Using a pointer to look up indexes, I loop, comparatively, over the first and last items, inwardly.
+    - if comparator returns a False, exit the loop. Not a palindrme
+    - else
+3. Loop inwards and compare the next items in the sequence (start+1, end-1)
+4. If the loop fininshes without returning a mismatch, then the user input passes for a palindrome
+~~~
+%runfile /home/braen/Documents/TechnicalAssessment/palindrome_checker.py --wdir
+>  kayak
+True
+
+%runfile /home/braen/Documents/TechnicalAssessment/palindrome_checker.py --wdir
+>  racecars
+False
+
+%runfile /home/braen/Documents/TechnicalAssessment/palindrome_checker.py --wdir
+>  racecar
+True
+~~~
