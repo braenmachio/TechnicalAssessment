@@ -15,7 +15,8 @@
 **Runtime Codefiles**
 
 - Copy only the required files by the application
-**Test**
+
+**Test Run**
 - `docker-compose.yaml` for a quick dry run :w
 ~~~
     psycopg version: 3.3.4
@@ -45,7 +46,7 @@
 - Pinning dependency version
 - `.dockerignore` for host local env/secrets, dependecy directories, tests, IDE junk
 
-### 2. Palindrome Checker
+### 3. Palindrome Checker
 - Given that the there are no spaces or punctuation to strip, this meets the criteria for a slicing operation s == s[::-1]
 - It's performant, however, the fact that it creates a copy of the sequence, it is less prefered in environments where memory is a constraining factor.
 
@@ -68,4 +69,40 @@ False
 %runfile /home/braen/Documents/TechnicalAssessment/palindrome_checker.py --wdir
 >  racecar
 True
+~~~
+
+### 4. Polymer Plant
+
+- This problem is best addressed using a stack where we can compare an incoming and already existing element before commiting them to memory.
+
+- What we aim to achieve is making sure all reactive elements interact at the very top of the stack.
+
+- Two operations are key:
+    - Pop() : remove a reactive pair from the chain build
+    - Append() : persist a monomer to the chain, if a reaction does not occur
+
+- In the code, the logic flows thiswise:
+Passing a string to a function
+1. We intialize a stack to hold the polymers
+2. Introduce our condition:
+    - check if a monomer exists in the stack (if it does not, add one)
+    - compare an existing monomer to an incoming one
+    - if a reaction occurs [xX] :
+        - pop(): discard/remove the element from the stack and its corrending pair
+    - else: append the incoming pair into the stack
+    - Repeat
+3. Finally, a stable polymer is concatenated and printed out.
+
+~~~
+%runfile /home/braen/Documents/TechnicalAssessment/polymer_plant.py --wdir
+mJYBlrleUsyuNOfOgZtb
+
+%runfile /home/braen/Documents/TechnicalAssessment/polymer_plant.py --wdir
+vRaNgeUY
+
+%runfile /home/braen/Documents/TechnicalAssessment/polymer_plant.py --wdir
+WySrKeqEzAYUYulZGrjfdEvSxYQxTqp
+
+%runfile /home/braen/Documents/TechnicalAssessment/polymer_plant.py --wdir
+cncwiedeiddnwiedindidnwmmskd
 ~~~
