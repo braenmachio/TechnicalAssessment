@@ -1,10 +1,7 @@
 ## Technical Assessment Documentation
 
-### 1. File Naming
-- Python files are also treated as *modules* hence, lowercase separated by under_scores
-`palindrome_checker.py` and `polymer_plant.py`
 
-### 2. Minimal Dockerfile
+### 1. Minimal Dockerfile
 - Be as small as reasonably possible. How do I accomplish this: 
 
 **Multi stage the builds**
@@ -46,7 +43,7 @@
 - Pinning dependency version
 - `.dockerignore` for host local env/secrets, dependecy directories, tests, IDE junk
 
-### 3. Palindrome Checker
+### 2. Palindrome Checker
 - Given that the there are no spaces or punctuation to strip, this meets the criteria for a slicing operation s == s[::-1]
 - It's performant, however, the fact that it creates a copy of the sequence, it is less prefered in environments where memory is a constraining factor.
 
@@ -71,7 +68,7 @@ False
 True
 ~~~
 
-### 4. Polymer Plant
+### 3. Polymer Plant
 
 - This problem is best addressed using a stack where we can compare an incoming and already existing element before commiting them to memory.
 

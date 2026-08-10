@@ -6,6 +6,12 @@ Created on Sat Aug  8 17:28:16 2026
 @author: braen
 """
 
+import logging
+from log_config import polymer_logging
+
+# create a module level logger
+logger = logging.getLogger(__name__) 
+
 
 def reaction(polymer: str) -> str:
     """
@@ -33,10 +39,13 @@ def reaction(polymer: str) -> str:
             and polymer_stack[-1] != monomer  # yX
             and polymer_stack[-1].lower() == monomer.lower()  # yY
         ):
-            polymer_stack.pop()
+            popped = polymer_stack.pop()
+            logger.debug("Reaction Occured: %s%s ", monomer, popped)
         else:
             polymer_stack.append(monomer)
     return "".join(polymer_stack)
 
 
-print(reaction("mJYBPpluUqQrleJjgGUWwTtsywWdDuMmNOSsLlfXxOtTCcFfgXxZGgthHb"))
+if __name__ == "__main__":
+    polymer_logging()  # Safely binds to the log file before logic runs
+    print(reaction("mJYBPpluUqQrleJjgGUWwTtsywWdDuMmNOSsLlfXxOtTCcFfgXxZGgthHb"))
